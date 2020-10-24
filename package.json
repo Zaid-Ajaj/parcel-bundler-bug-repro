@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "scripts": {
+        "start": "dotnet fable watch src --run parcel ./src/index.html",
+        "build": "dotnet fable src --run parcel build ./src/index.html",
+        "start:parcel": "parcel ./src/index.html",
+        "build:parcel": "parcel build ./src/index.html",
+        "build:parcel:no-scope-hoist": "parcel build ./src/index.html --no-scope-hoist"
+    },
+    "dependencies": {
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0"
+    },
+    "devDependencies": {
+        "parcel": "^2.0.0-beta.1",
+        "sass": "^1.27.0"
+    }
+}
